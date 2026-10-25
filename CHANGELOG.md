@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.1
+
+- Require setuptools >=77.0.3, matching the SPDX license-expression metadata used by the project.
+- Include this changelog in the source distribution. Runtime behavior is unchanged.
+
 ## 0.1.0
 
 - Export local IIIF v3 supplementing plain-text annotations as passive HTML,

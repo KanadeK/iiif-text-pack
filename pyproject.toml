@@ -1,10 +1,10 @@
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=77.0.3"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "iiif-text-pack"
-version = "0.1.0"
+version = "0.1.1"
 description = "Build an offline reading companion from IIIF Presentation 3 text annotations."
 readme = "README.md"
 requires-python = ">=3.11"
