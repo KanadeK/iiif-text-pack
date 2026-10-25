@@ -1,0 +1,11 @@
+{
+  "module": "iiif_text_pack",
+  "args": ["@examples/manifest.json", "--resource", "@examples/page-2.json", "--output", "pack"],
+  "exit": 0,
+  "contains": "\"texts\": 3",
+  "files": {
+    "pack/index.html": "Notes from a community garden",
+    "pack/text.txt": "我们把手记放在门边",
+    "pack/report.json": "\"omissions\": []"
+  }
+}

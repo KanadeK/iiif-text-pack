@@ -1,0 +1,30 @@
+{
+  "id": "https://collection.example/notebook/page/2",
+  "type": "AnnotationPage",
+  "items": [
+    {
+      "id": "https://collection.example/notebook/annotation/2",
+      "type": "Annotation",
+      "motivation": "supplementing",
+      "target": {
+        "type": "SpecificResource",
+        "source": "https://collection.example/notebook/canvas/2",
+        "selector": {"type": "FragmentSelector", "value": "xywh=100,100,1000,600"}
+      },
+      "body": [
+        {
+          "type": "TextualBody",
+          "format": "text/plain",
+          "language": "en",
+          "value": "The notebook stayed beside the door. We recorded the plants that survived, the tools that needed repair, and the names of neighbors who offered to help.\n\nA record is useful when another person can read it, carry it away, and add something of their own."
+        },
+        {
+          "type": "TextualBody",
+          "format": "text/plain",
+          "language": "zh-Hans",
+          "value": "我们把手记放在门边，记下存活的植物、需要修理的工具，还有愿意帮忙的邻居。\n\n一份记录的价值，在于别人能够读懂、带走，并添上自己的发现。"
+        }
+      ]
+    }
+  ]
+}

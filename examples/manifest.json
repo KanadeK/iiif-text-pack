@@ -1,0 +1,48 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://collection.example/notebook/manifest",
+  "type": "Manifest",
+  "label": {"en": ["Notes from a community garden"], "zh-Hans": ["社区花园手记"]},
+  "requiredStatement": {
+    "label": {"en": ["About this example"]},
+    "value": {"en": ["Original synthetic text and metadata created for iiif-text-pack. No historical document is represented."]}
+  },
+  "rights": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "items": [
+    {
+      "id": "https://collection.example/notebook/canvas/1",
+      "type": "Canvas",
+      "label": {"en": ["1 · A shared patch of earth"]},
+      "width": 1200,
+      "height": 1600,
+      "annotations": [
+        {
+          "id": "https://collection.example/notebook/page/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://collection.example/notebook/annotation/1",
+              "type": "Annotation",
+              "motivation": "supplementing",
+              "target": "https://collection.example/notebook/canvas/1#xywh=100,100,1000,500",
+              "body": {
+                "type": "TextualBody",
+                "format": "text/plain",
+                "language": "en",
+                "value": "We opened the gate before the morning rain.\n\nAlong the east wall, the first beans had reached their strings. A new sign asked visitors to leave one path clear so everyone could reach the water tap."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://collection.example/notebook/canvas/2",
+      "type": "Canvas",
+      "label": {"en": ["2 · What we kept"], "zh-Hans": ["2 · 留下的记录"]},
+      "width": 1200,
+      "height": 1600,
+      "annotations": [{"id": "https://collection.example/notebook/page/2", "type": "AnnotationPage"}]
+    }
+  ]
+}

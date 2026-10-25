@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "iiif-text-pack"
+version = "0.1.0"
+description = "Build an offline reading companion from IIIF Presentation 3 text annotations."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{name = "KanadeK"}]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest==9.1.1", "ruff==0.17.2", "build==1.6.1"]
+
+[project.scripts]
+iiif-text-pack = "iiif_text_pack.cli:main"
+
+[project.urls]
+Repository = "https://github.com/KanadeK/iiif-text-pack"
+Issues = "https://github.com/KanadeK/iiif-text-pack/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
